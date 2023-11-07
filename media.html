@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La violeta project | html y Css</title>
+    <link rel="short icon" type="image/x-icon" href="img/favicons/favicon.ico">
+    <link rel="icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styledef.css">
+</head>
+
+<body id="top">
+    <header>
+        <nav>
+            <h3 class="logo"><a href="index.html"><img src="img/cdnlogo.com_mozilla-firefox.svg"
+                        alt="logo de nuestra empresa" title="muestra logotipo empresa"></a></h3>
+
+            <label for="showmenu" class="showmenu">&equiv;</label>
+            <input type="checkbox" id="showmenu" name="showmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="imagenes.html">Imágenes</a></li>
+                <li><a class="active" href="media.html">Audio-Vídeo</a></li>
+                <li><a href="marcoflotante.html">Iframes</a></li>
+                <li><a href="contactar.html">Contactar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Audio y vídeo con Html 5</h1>
+        <h2>Audio</h2>
+        <p>Desde la estandarización de html 5 disponemos de la etiqueta &lt;audio>&lt;/audio></p>
+        <section>
+            <audio controls>
+                <source src="video-audio/HakunaMatataItMeansNoWorries.mp3" type="audio/mpeg">
+                <source src="video-audio/HakunaMatataItMeansNoWorries.ogg" type="audio/ogg">
+            </audio>
+        </section>
+        <h2>Vídeo</h2>
+        <p>Desde la estandarización de html 5 disponemos de la etiqueta &lt;video>&lt;/video></p>
+        <section>
+            <video poster="video-audio/musicos.jpg" controls>
+                <source src="video-audio/video.ogv" type="video/ogg">
+                <source src="video-audio/video.mp4" type="video/mpeg">
+
+            </video>
+            <video id="video1" poster="video-audio/musicos.jpg">
+                <source src="video-audio/video.ogv" type="video/ogg">
+                <source src="video-audio/video.mp4" type="video/mpeg">
+            </video>
+            <article>
+                <button onclick="playPause();">Play/pause</button> || <button onclick="reproduce();">Play</button>
+                ||<button onclick="pausar();">Pause</button>
+            </article>
+            <!--  <div class="demo">
+               <a href="javascript:playPause();">Play/pause</a> || <a href="">Play</a> || <a href="">Pause</a>
+            </div> -->
+        </section>
+
+        <section><a href="fondos/videofondo.html">Abrir html con vídeos</a></section>
+    </main>
+    <footer>
+        <div>
+            <p class="blanco">&copy; Mío y solo mío <a class="footerblanc" href="mailto:elmio@midomino.mio"> Contacta
+                    por
+                    email conmigo</a> C/mi dirección sin número pc 00000. <strong> Mi pueblo</strong></p>
+        </div>
+
+        <div>
+            <p class="blanco">
+                <a class="footerblanc" href="tel:+34555555555">&#9742; LLámanos</a> || <a class="footerblanc"
+                    href="https://api.whatsapp.com/send?phone=555555555&text=Hola"><i class="fa fa-whatsapp"></i>
+                    Whatsapp</a>
+            </p>
+            <div>
+                <!-- <a class="top" href="#top">
+                        <span>Volver arriba</span>
+                    </a> -->
+                <a class="gran" href="#top">
+                    <i class="fa fa-arrow-circle-up"></i>
+                </a>
+            </div>
+
+
+    </footer>
+    <script>
+        let pepe = document.getElementById('video1');
+
+        function playPause() {
+            if (pepe.paused) {
+                pepe.play();
+            } else {
+                pepe.pause();
+            }
+        }
+
+        function reproduce() {
+            pepe.play();
+        }
+        function pausar() {
+            pepe.pause();
+        }
+    </script>
+</body>
+
+</html>

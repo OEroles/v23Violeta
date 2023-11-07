@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro imágenes</title>
+        <style>
+                .mwidth{
+                width: 100%;
+               } 
+
+               figure > img{
+                width: 80vw;
+                height: 40vh;
+                object-fit: cover;
+               }
+
+           /*      img {
+                        width: 300px;
+                        height: 300px;
+                        object-fit: contain;
+                } */
+        </style>
+</head>
+
+<body>
+        <figure>
+                <img src="img/periodic-table-of-html-elements.png" alt="">
+                <figcaption>Tabla pewriódica de elementos HTML</figcaption>
+        </figure>
+        <picture>
+                <source media="(min-width:950px)" srcset="img/img_pink_flowers.jpg"> 
+                <source media="(min-width:665px)" srcset="img/img_white_flower.jpg">  
+                <img src="img/img_orange_flowers.jpg" alt="Flowers">
+        </picture>
+
+
+
+        <img class="hiper" src="img/escocia.jpg" alt="Texto alternativo descriptivo" title="Título informastivo">
+        <img class="hiper" src="img/gif1.gif" alt="gif animado">
+        <img src="img/imgs/tomato2.svg" alt="imágen svg">
+        <img class="mwidth" src="img/img_pink_flowers.jpg" alt="">
+
+        <div>
+                <img src="img/imgs/background.jpg" alt="">
+        </div>
+</body>
+
+</html>
