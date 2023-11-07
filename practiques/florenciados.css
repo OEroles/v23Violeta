@@ -1,0 +1,135 @@
+@charset "utf-8";
+<<<<<<< HEAD
+
+=======
+>>>>>>> d547dc873ec53c73994c4c44f2ae5e067105513b
+*,
+*::before,
+*::after,
+html,
+body {
+  margin: 0;
+  padding: 0;
+<<<<<<< HEAD
+}
+
+html,
+:root {
+  font-family: "Tahoma", sans-serif;
+  font-size: 16px;
+=======
+  box-sizing: border-box;
+}
+html {
+  font-family: "Tahoma", sans-serif;
+  font-size: 16px;
+
+>>>>>>> d547dc873ec53c73994c4c44f2ae5e067105513b
+  background-color: #bfc1b0;
+}
+
+.wrapper {
+<<<<<<< HEAD
+  width: 70vw;
+  margin: auto;
+  padding: 3rem 0;
+}
+
+p {
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+=======
+  width: 80%;
+  margin: auto;
+  padding: 10px 30px;
+}
+
+p {
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 10px;
+>>>>>>> d547dc873ec53c73994c4c44f2ae5e067105513b
+}
+
+h1 {
+  letter-spacing: 20px;
+<<<<<<< HEAD
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #191970;
+  text-align: right;
+  padding: 1rem;
+  border: 1px solid #191970;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+=======
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #191970;
+  text-align: right;
+  padding: 10px;
+>>>>>>> d547dc873ec53c73994c4c44f2ae5e067105513b
+}
+
+h2 {
+  background-color: #5b6135;
+  color: #fff;
+<<<<<<< HEAD
+  margin: 1rem 0;
+  clear: both;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+}
+
+.izq {
+  float: left;
+  margin: 0 1rem 1rem 0;
+=======
+  margin: 15px 0;
+  clear: both;
+  font-size: 15px;
+  padding-bottom: 2px;
+>>>>>>> d547dc873ec53c73994c4c44f2ae5e067105513b
+}
+
+strong {
+  font-style: oblique;
+}
+
+img {
+<<<<<<< HEAD
+  max-width: 200px;
+=======
+  max-width: 150px;
+}
+
+.izq {
+  float: left;
+  margin: 0 5px 5px 0;
+>>>>>>> d547dc873ec53c73994c4c44f2ae5e067105513b
+}
+
+.der {
+  float: right;
+<<<<<<< HEAD
+  margin: 0 0 1rem 1rem;
+}
+
+.centrado img {
+  margin: auto;
+  display: block;
+}
+=======
+  margin: 0 0 5px 5px;
+}
+.centrado img {
+  margin: auto;
+  display: block;
+}
+address {
+  font-size: 10px;
+  font-style: oblique;
+  margin-bottom: 5px;
+}
+>>>>>>> d547dc873ec53c73994c4c44f2ae5e067105513b
