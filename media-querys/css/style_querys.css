@@ -1,0 +1,192 @@
+.contenedor {
+	width: 100vw;
+	height: 40vh;
+	background-color: cadetblue;
+	margin: 3vh 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.contenedor img {
+	width: 100%;
+	object-fit: cover;
+	object-position: bottom;
+	transition: all .5s ease;
+
+}
+
+.contenedor img:hover {
+	transform: scale(1.3);
+}
+
+.galeria {
+	width: 100vw;
+	margin: 2vh 0vw;
+	transition: all .5s ease;
+
+}
+
+.galeria:hover {
+	/* filter: brightness(0.60); */
+	filter: contrast(180%);
+	box-shadow: -1px -1px 15px inset rgb(238, 230, 230),
+		0 0 25px inset rgb(244, 240, 240),
+		0 0 60px rgb(234, 234, 241),
+		0 0 60px rgb(234, 234, 241),
+		0 0 60px rgb(234, 234, 241),
+		0 0 60px rgb(234, 234, 241);
+
+}
+
+
+p {
+	margin: 2vh 5vw;
+	column-count: 1;
+}
+
+.fosc {
+	background-color: black;
+	padding: 1rem 0;
+}
+
+iframe {
+	margin: 2vh 0;
+	width: 100vw;
+	height: 40vh;
+	border: none;
+
+}
+
+/* div.clear .vimeo {
+	padding: 56.25% 0 0 0;
+	position: relative;
+	margin: 3vh 0;
+} */
+
+/* div.vimeo iframe {
+	position: absolute;
+	border: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+} */
+
+@media screen and (min-width: 480px) {
+
+	.clear {
+		/* 		display: flex;
+		flex-flow: wrap; */
+		justify-content: space-evenly;
+		margin: 1rem 0;
+		;
+	}
+
+	p {
+		column-count: 2;
+		column-gap: 5vw;
+	}
+
+	.galeria {
+		width: 40vw;
+		/* margin: 5vw; */
+	}
+
+	.contenedor {
+		width: 40vw;
+		height: 25vh;
+	}
+
+	.contenedor img {
+		width: 140%;
+	}
+
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+	.clear {
+
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-around;
+	}
+
+	.videos {
+		width: 40%;
+		margin: auto;
+	}
+
+	.paddings {
+		padding-top: 56, 25%;
+		max-width: 100%;
+		position: relative;
+		height: 0px;
+	}
+
+	.paddings iframe {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px
+	}
+
+	p {
+		column-count: 3;
+		column-gap: 4.5vw;
+	}
+
+
+	/* 
+	h1 {
+		font-size: 2.2rem;
+		font-weight: 800;
+		margin: 2vh 2vw;
+	}
+ */
+	.galeria {
+		width: 30vw;
+
+	}
+
+	.contenedor {
+		width: 30vw;
+		height: 25vh;
+	}
+
+	div.clear iframe {
+		margin: 2vh 0;
+		width: 40vw;
+		height: 40vh;
+		border: none;
+
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+	p {
+		column-count: 4;
+	}
+
+	/* 	h1 {
+		font-size: 2.4rem;
+		
+		margin: 2vh 2vw;
+	} */
+
+	.contenedor {
+		width: 20vw;
+		margin: 1vh 1vw;
+	}
+
+	.galeria {
+		width: 20vw;
+
+	}
+}

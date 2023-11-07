@@ -1,0 +1,76 @@
+*,
+::before,
+::after,
+html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+nav {
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        color: white;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+}
+
+.showmenu {
+        font-size: 2rem;
+        font-weight: bolder;
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 4px;
+        margin: .4rem 0;
+        padding: 0 .6rem;
+}
+
+.showmenu:hover {
+        color: rgba(227, 140, 140, .5);
+        border: 1px solid rgba(227, 140, 140, .5);
+}
+
+nav ul {
+        display: none;
+        list-style: none;
+}
+
+nav input[type="checkbox"] {
+        display: none;
+}
+
+nav input[type="checkbox"]:checked~ul {
+        display: block;
+}
+
+
+nav ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 1vh 2vw;
+}
+
+@media screen and (min-width: 768px) {
+
+
+        .showmenu {
+                display: none;
+        }
+
+        nav input[type="checkbox"]:checked~ul {
+                display: flex;
+
+        }
+
+        nav ul {
+                display: flex;
+                flex-flow: row;
+
+        }
+
+}
